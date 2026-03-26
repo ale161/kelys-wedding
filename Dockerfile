@@ -7,8 +7,10 @@ WORKDIR /app
 # Install pnpm using corepack with specific version from package.json
 RUN corepack enable && corepack prepare pnpm@10.4.1 --activate
 
-# Copy package files
+# Copy package files and patches (required for pnpm install)
 COPY package.json pnpm-lock.yaml ./
+COPY patches ./patches/
+
 RUN pnpm install --frozen-lockfile
 
 # Copy source
@@ -25,8 +27,10 @@ WORKDIR /app
 # Install pnpm using corepack with specific version from package.json
 RUN corepack enable && corepack prepare pnpm@10.4.1 --activate
 
-# Copy package files and install production deps only
+# Copy package files and patches (required for pnpm install)
 COPY package.json pnpm-lock.yaml ./
+COPY patches ./patches/
+
 RUN pnpm install --frozen-lockfile --prod
 
 # Copy built files from builder
