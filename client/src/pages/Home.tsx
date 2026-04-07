@@ -9,7 +9,6 @@ import SectionDivider from "@/components/SectionDivider";
 import CeremonySection from "@/components/CeremonySection";
 import ReceptionSection from "@/components/ReceptionSection";
 import InvitationSection from "@/components/InvitationSection";
-import PhotoGallerySection from "@/components/PhotoGallerySection";
 import FamilySection from "@/components/FamilySection";
 import RSVPSection from "@/components/RSVPSection";
 import Footer from "@/components/Footer";
@@ -25,8 +24,6 @@ export default function Home() {
       <ReceptionSection />
       <SectionDivider />
       <InvitationSection />
-      <SectionDivider />
-      <PhotoGallerySection />
       <SectionDivider />
       <FamilySection />
       <SectionDivider />
