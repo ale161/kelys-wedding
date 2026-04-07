@@ -1,17 +1,17 @@
 /**
  * CeremonySection — Church ceremony details with map
  * Design: Botanical Gilded Scroll — warm tones, gold accents
- * Ι.Ν. Ευαγγελισμός της Θεοτόκου, Παλλήνη
+ * Ι.Ν. Ευαγγελισμός της Θεοτόκου, εντός Κτήματος Λατάνια, Παλλήνη
  */
 import AnimatedSection from "./AnimatedSection";
 import { Church, MapPin, Navigation, Clock } from "lucide-react";
 
-const CEREMONY_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/105873545/ZffQFUTLt9CobzFbFLpxvq/ceremony-bg-mMfvpcJKumcqytRqYPUAGz.webp";
-// Ι.Ν. Ευαγγελισμός της Θεοτόκου, Παλλήνη
-const GOOGLE_MAPS_CHURCH = "https://maps.google.com/?q=Ευαγγελισμός+Θεοτόκου+Παλλήνη+Αττική";
-const GOOGLE_MAPS_DIRECTIONS_CHURCH = "https://www.google.com/maps/dir/?api=1&destination=Ευαγγελισμός+Θεοτόκου+Παλλήνη+Αττική";
-// Embed: Ευαγγελισμός Θεοτόκου Παλλήνη
-const MAP_EMBED_CHURCH = "https://maps.google.com/maps?q=Ευαγγελισμός+Θεοτόκου+Παλλήνη&output=embed&z=15";
+const CEREMONY_IMG = "/church.webp";
+// ESTATE LATANIA — Μαρίνου Αντύπα 2, Παλλήνη (η εκκλησία είναι εντός κτήματος)
+const GOOGLE_MAPS_CHURCH = "https://maps.app.goo.gl/niih9yuPqZu9hbACA";
+const GOOGLE_MAPS_DIRECTIONS_CHURCH = "https://www.google.com/maps/dir/?api=1&destination=38.0042793,23.8725721";
+// Embed: ESTATE LATANIA coordinates
+const MAP_EMBED_CHURCH = "https://maps.google.com/maps?q=38.0042793,23.8725721&output=embed&z=15";
 
 export default function CeremonySection() {
   return (
@@ -69,7 +69,7 @@ export default function CeremonySection() {
               <div className="flex items-center gap-3 justify-center md:justify-start text-warm-brown/70">
                 <MapPin className="w-4 h-4 text-gold/60 shrink-0" />
                 <span className="text-lg" style={{ fontFamily: "'Cormorant Garamond', serif" }}>
-                  Παλλήνη, Αττική
+                  Μαρίνου Αντύπα 2, Παλλήνη — εντός Κτήματος Λατάνια
                 </span>
               </div>
             </div>

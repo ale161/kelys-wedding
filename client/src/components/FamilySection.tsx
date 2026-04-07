@@ -10,12 +10,6 @@ export default function FamilySection() {
     <section id="family" className="py-20 md:py-28 bg-ivory">
       <div className="container max-w-5xl mx-auto">
         <AnimatedSection className="text-center mb-16">
-          <p
-            className="text-gold/70 text-sm tracking-[0.3em] uppercase mb-3"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
-            Με αγάπη
-          </p>
           <h2
             className="text-3xl sm:text-4xl md:text-5xl text-warm-brown mb-4"
             style={{ fontFamily: "'Playfair Display', serif", fontWeight: 600 }}
@@ -38,21 +32,21 @@ export default function FamilySection() {
               >
                 Οικογένειες
               </h3>
-              <div className="space-y-3">
+              <div className="space-y-6">
                 <p
                   className="text-warm-brown/80 text-lg"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   Παναγιώτη Καλδή<br />
                   <span className="text-gold/60">&</span><br />
-                  Μαρίας Χατζηγιαννάκου
+                  Μαρίας Χατζηγιαννακού
                 </p>
-                <div className="gold-line w-12 mx-auto my-3" />
+                <div className="gold-line w-12 mx-auto" />
                 <p
                   className="text-warm-brown/80 text-lg"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
-                  Αλεξάνδρου<br />
+                  Αλέξανδρου<br />
                   <span className="text-gold/60">&</span><br />
                   Ελένης Μήτσουλα
                 </p>
@@ -72,7 +66,7 @@ export default function FamilySection() {
               >
                 Κουμπάροι
               </h3>
-              <div className="space-y-3">
+              <div className="space-y-6">
                 <p
                   className="text-warm-brown/80 text-lg"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -81,7 +75,7 @@ export default function FamilySection() {
                   <span className="text-gold/60">&</span><br />
                   Χριστιάννα Χαλκιά
                 </p>
-                <div className="gold-line w-12 mx-auto my-3" />
+                <div className="gold-line w-12 mx-auto" />
                 <p
                   className="text-warm-brown/80 text-lg"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
